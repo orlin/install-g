@@ -1,0 +1,44 @@
+{
+  "name": "install-g",
+  "description": "insist on global npm install",
+  "keywords": [
+    "npm",
+    "install",
+    "global"
+  ],
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/orlin/install-g.git"
+  },
+  "bugs": {
+    "mail": "om@soundsapiens.com",
+    "url": "https://github.com/orlin/install-g/issues"
+  },
+  "author": "Orlin M Bozhinov <om@soundsapiens.com>",
+  "contributors": [],
+  "bin": {
+    "install-g": "./index.js"
+  },
+  "dependencies": {
+    "coffee-script": "^1.8.0",
+    "npm": "^2.1.9"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-coffee": "^2.2.0",
+    "gulp-util": "^3.0.1"
+  },
+  "scripts": {
+    "gulp": "./node_modules/.bin/gulp"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://mit-license.org/"
+    }
+  ]
+}
