@@ -4,9 +4,12 @@
   "keywords": [
     "npm",
     "install",
-    "global"
+    "global",
+    "dependencies",
+    "scripts",
+    "postinstall"
   ],
-  "version": "0.0.1",
+  "version": "0.0.1-1",
   "repository": {
     "type": "git",
     "url": "git://github.com/orlin/install-g.git"
