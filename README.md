@@ -13,3 +13,7 @@ As a result, any package using your package as a dependency would trigger its gl
 
 Need not ask "please install {something} globally" - it just happens...
 See [bon](https://github.com/orlin/bon) for example use.
+
+## License
+
+[MIT](http://orlin.mit-license.org)
