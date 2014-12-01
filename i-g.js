@@ -7,6 +7,8 @@ pkg = process.env.npm_package_name;
 if (!pkg) {
   console.error("Must use via package.json's scripts.install - defaults to name.");
   process.exit(1);
+} else if (pkg === "install-g") {
+  process.exit(0);
 }
 
 unlessGloballyInstalled = function(pkg, cb) {
