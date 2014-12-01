@@ -6,10 +6,6 @@ pkg = process.env.npm_package_name
 unless pkg
   console.error "Must use via package.json's scripts.install - defaults to name."
   process.exit(1)
-else if pkg is "install-g"
-  console.log process.env
-  console.log "install-g doesn't self-install globally"
-  process.exit(0)
 
 # calls cb if a pkg isn't installed globally
 unlessGloballyInstalled = (pkg, cb) ->

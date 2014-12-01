@@ -9,7 +9,7 @@
     "scripts",
     "postinstall"
   ],
-  "version": "0.0.1-4",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/orlin/install-g.git"
@@ -33,8 +33,7 @@
     "gulp-util": "^3.0.1"
   },
   "scripts": {
-    "gulp": "./node_modules/.bin/gulp",
-    "install": "./index.js"
+    "gulp": "./node_modules/.bin/gulp"
   },
   "engines": {
     "node": "0.10.x"
