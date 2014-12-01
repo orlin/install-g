@@ -9,7 +9,7 @@
     "scripts",
     "postinstall"
   ],
-  "version": "0.0.1-1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/orlin/install-g.git"

@@ -1,7 +1,7 @@
 #!/usr/bin/env coffee
 
 npm = require("npm")
-pkg = process.env.npm_package_config_installg_pkg || process.env.npm_package_name
+pkg = process.env.npm_package_name
 
 unless pkg
   console.error "Must use via package.json's scripts.install - defaults to name."
@@ -11,8 +11,8 @@ unless pkg
 unlessGloballyInstalled = (pkg, cb) ->
   npm.load (err, npm) ->
     console.error err if err?
-    npm.config.set("json", true)
     npm.config.set("global", true)
+    npm.config.set("json", true)
     npm.config.set("depth", 0) # just top level, no other package deps
     npm.commands.ls [pkg], true, (err, data, lite) ->
       console.error err if err?

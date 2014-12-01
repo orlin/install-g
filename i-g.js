@@ -2,7 +2,7 @@ var npm, pkg, unlessGloballyInstalled;
 
 npm = require("npm");
 
-pkg = process.env.npm_package_config_installg_pkg || process.env.npm_package_name;
+pkg = process.env.npm_package_name;
 
 if (!pkg) {
   console.error("Must use via package.json's scripts.install - defaults to name.");
@@ -14,8 +14,8 @@ unlessGloballyInstalled = function(pkg, cb) {
     if (err != null) {
       console.error(err);
     }
-    npm.config.set("json", true);
     npm.config.set("global", true);
+    npm.config.set("json", true);
     npm.config.set("depth", 0);
     return npm.commands.ls([pkg], true, function(err, data, lite) {
       if (err != null) {
