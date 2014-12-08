@@ -23,7 +23,14 @@ If people run `install -g` on your package it will install once rather than twic
 ## Why
 
 Need not ask "please install {something} globally" - it just happens...
-See [bon](https://github.com/orlin/bon) for example use.
+See [install-g's dependents](https://www.npmjs.org/package/install-g) for example.
+
+## Testing
+
+The tests of modules such as [datomiki](https://github.com/datomicon/datomiki)
+will show that it works.  In that case: `datomiki` has a devDependency on `dbin`,
+which has a dependency on `datomic-free`, both depending on `bon` -
+all three of which are available globally via `install-g`.
 
 ## License
 
