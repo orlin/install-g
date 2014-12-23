@@ -15,10 +15,10 @@
   },
   "author": "Orlin M Bozhinov <om@soundsapiens.com>",
   "contributors": [],
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "daps": "*"
   },
-  "devDependencies": {},
   "bin": {
     "igdeps": "bin.js"
   },
