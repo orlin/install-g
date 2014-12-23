@@ -27,7 +27,7 @@ If people run `install -g` on your package it will install once rather than twic
 Need not ask "please install {something} globally" - it just happens...
 See [install-g's dependents](https://www.npmjs.org/package/install-g) for example.
 
-## Testing [![Build Status](https://secure.travis-ci.org/orlin/install-g.png)](http://travis-ci.org/orlin/install-g)
+## Testing [![Build Status](https://img.shields.io/travis/orlin/install-g.svg?style=flat)](http://travis-ci.org/orlin/install-g)
 
 ```sh
 batshit test
