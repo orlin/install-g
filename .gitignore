@@ -11,3 +11,6 @@ tmp
 # Node
 node_modules
 npm-debug.log
+
+# Temp
+test/deps.bat

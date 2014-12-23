@@ -1,0 +1,21 @@
+{ "name": "wait-up"
+, "private": true
+, "description": "when several global dependencies are wanted"
+, "keywords": [ "install-g", "test", "example" ]
+, "version": "0.0.1"
+, "bugs":
+  { "mail": "om@soundsapiens.com"
+  , "url" : "https://github.com/orlin/install-g/issues"
+  }
+, "author": "Orlin M Bozhinov <om@soundsapiens.com>"
+, "contributors": []
+, "dependencies": {}
+, "devDependencies": {}
+, "bin": { "igdeps": "./bin.js" }
+, "scripts": { "install": "../../index.js || true" }
+, "licenses":
+  [ { "type": "Unlicense"
+    , "url" : "http://unlicense.org"
+    }
+  ]
+}
