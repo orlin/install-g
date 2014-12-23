@@ -1,11 +1,13 @@
-# install-g -- npm install -g {pkg}
+# install-g -- npm install -g {}
 
 One can insist to automatically npm-install a package globally.
+
+[![NPM](https://nodei.co/npm/install-g.png?mini=true)](https://www.npmjs.org/package/install-g)
 
 ## Use
 
 1. Add `install-g` to your `package.json` dependencies.
-2. Add `"scripts": { "install": "./node_modules/.bin/install-g || true" }`
+2. Add `"scripts": { "install": "node_modules/.bin/install-g || true" }`
 
 As a result, any package using your package as a dependency would trigger its global installation.
 Use of devDependencies isn't recommended, unless your project is private.
@@ -25,12 +27,11 @@ If people run `install -g` on your package it will install once rather than twic
 Need not ask "please install {something} globally" - it just happens...
 See [install-g's dependents](https://www.npmjs.org/package/install-g) for example.
 
-## Testing
+## Testing [![Build Status](https://secure.travis-ci.org/orlin/install-g.png)](http://travis-ci.org/orlin/install-g)
 
-The tests of modules such as [datomiki](https://github.com/datomicon/datomiki)
-will show that it works.  In that case: `datomiki` has a devDependency on `dbin`,
-which has a dependency on `datomic-free`, both depending on `bon` -
-all three of which are available globally via `install-g`.
+```sh
+batshit test
+```
 
 ## License
 

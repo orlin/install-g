@@ -21,7 +21,7 @@
   "author": "Orlin M Bozhinov <om@soundsapiens.com>",
   "contributors": [],
   "bin": {
-    "install-g": "./index.js"
+    "install-g": "index.js"
   },
   "dependencies": {
     "npm": "^2.1.9"
@@ -34,7 +34,7 @@
     "batshit": "*"
   },
   "scripts": {
-    "gulp": "./node_modules/.bin/gulp",
+    "gulp": "node_modules/.bin/gulp",
     "test": "node_modules/.bin/batshit -t test"
   },
   "engines": {

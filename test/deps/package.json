@@ -1,9 +1,10 @@
 {
   "name": "igdeps",
   "private": true,
-  "description": "when several global dependencies are wanted",
+  "description": "automatic npm install -g {several packages} #in several ways",
   "keywords": [
     "install-g",
+    "combo",
     "test",
     "example"
   ],
@@ -19,7 +20,7 @@
   },
   "devDependencies": {},
   "bin": {
-    "igdeps": "./bin.js"
+    "igdeps": "bin.js"
   },
   "scripts": {
     "install": "../../index.js || true"
