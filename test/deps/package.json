@@ -1,0 +1,34 @@
+{
+  "name": "igdeps",
+  "private": true,
+  "description": "automatic npm install -g {several packages} #in several ways",
+  "keywords": [
+    "install-g",
+    "combo",
+    "test",
+    "example"
+  ],
+  "version": "0.0.1",
+  "bugs": {
+    "mail": "om@soundsapiens.com",
+    "url": "https://github.com/orlin/install-g/issues"
+  },
+  "author": "Orlin M Bozhinov <om@soundsapiens.com>",
+  "contributors": [],
+  "dependencies": {
+    "daps": "*"
+  },
+  "devDependencies": {},
+  "bin": {
+    "igdeps": "bin.js"
+  },
+  "scripts": {
+    "install": "../../index.js || true"
+  },
+  "licenses": [
+    {
+      "type": "Unlicense",
+      "url": "http://unlicense.org"
+    }
+  ]
+}
