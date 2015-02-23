@@ -1,6 +1,6 @@
 #!/usr/bin/env batshit
 
-load ../node_modules/batshit/bin/batshit-helpers
+load $(which batshit-helpers)
 
 @test "all the dependencies install globally" {
   # seldom used modules

@@ -9,6 +9,9 @@ branches:
     - master
 install:
   - npm install
+  - npm install -g bon
+  - npm install -g batshit # does not install-g bon!
+  - export NODE_PATH=$(temp=$(dirname $(which bon)) && echo ${temp//bin/lib\/node_modules})
 notifications:
   email:
     recipients:
