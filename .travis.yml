@@ -8,10 +8,11 @@ branches:
     - active
     - master
 install:
+  - npm install --production  # needed nowhere else, installs the npm dependency, weird npm...
   - npm install
-  - npm install -g bon
-  - npm install -g batshit # does not install-g bon!
-  - export NODE_PATH=$(temp=$(dirname $(which bon)) && echo ${temp//bin/lib\/node_modules})
+  - npm install -g bon # can skip this one - kept to ensure install-g doesn't break its own tests
+  - npm install -g batshit
+  - export NODE_PATH=$(bon-p) # needed nowhere else, how is install-g different??
 notifications:
   email:
     recipients:
